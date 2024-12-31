@@ -1,22 +1,22 @@
-let user = {
+const user = {
     name: "John",
     money: 1000,
   
     [Symbol.toPrimitive](hint) {
-      alert(`hint: ${hint}`);
+      console.log(`hint: ${hint}`);
       return hint == "string" ? `{name: "${this.name}"}` : this.money;
     }
   };
   
   // conversions demo:
-  alert(user); // hint: string -> {name: "John"}
-  alert(+user); // hint: number -> 1000
-  alert(user + 500); // hint: default -> 1500
+  console.log(user); // hint: string -> {name: "John"}
+  console.log(+user); // hint: number -> 1000
+  console.log(user + 500); // hint: default -> 1500
 
 
 
 //the same:
-  let user1 = {
+  const user1 = {
     name: "John",
     money: 1000,
   
@@ -32,9 +32,9 @@ let user = {
   
   };
   
-  alert(user1); // toString -> {name: "John"}
-  alert(+user1); // valueOf -> 1000
-  alert(user1 + 500); // valueOf -> 1500
+  console.log(user1); // toString -> {name: "John"}
+  console.log(+user1); // valueOf -> 1000
+  console.log(user1 + 500); // valueOf -> 1500
 
 //The object-to-primitive conversion is called automatically 
 //by many built-in functions and operators that expect a primitive as a value.
