@@ -14,6 +14,7 @@ const obj2 = {
     sayHello() {
         console.log(this.name);
         console.log(this.age);
+        console.log(this.lastName);
     },
 };
 
