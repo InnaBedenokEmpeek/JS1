@@ -8,12 +8,13 @@ let max = Math.min.apply(0, numbers);
 console.log(max);
 
 
-const obj1 = {name: "Inna", age: 30};
+const obj1 = {name: "Inna", lastName: "Bedenok", age: 30, };
 
 const obj2 = {
     sayHello() {
         console.log(this.name);
         console.log(this.age);
+        console.log(this.lastName)
     },
 };
 
@@ -29,4 +30,4 @@ console.log( [...str]);
 
 let arr = [1, 2, 3];
 
-let arrCopy = [...arr]; //робить копію масива або обєктаб alert(arr === arrCopy); - false
+let arrCopy = [...arr]; //робить копію масива або обєктаб alert(arr === arrCopy); - false;
