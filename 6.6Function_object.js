@@ -8,7 +8,7 @@ let max = Math.min.apply(0, numbers);
 console.log(max);
 
 
-const obj1 = {name: "Inna", age: 30};
+const obj1 = {name: "Inna", lastName: "Bedenok", age: 30, };
 
 const obj2 = {
     sayHello() {
