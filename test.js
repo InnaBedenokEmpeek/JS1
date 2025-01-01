@@ -14,12 +14,16 @@ console.log(newCar);
 
 let user = {
     name: "Іван",
-  
-    toString() {
-      return this.name;
+    age: "30",
+    
+    valueOf() {
+      return +this.age;
     }
+  
+    
   };
   
-  console.log(user); // toString -> Іван
+  console.log(user.toString()); // toString -> Іван
+  console.log(user.valueOf());
   console.log(user + 500); // toString -> Іван500
 

@@ -32,7 +32,7 @@ const user = {
   
   };
   
-  console.log(user1); // toString -> {name: "John"}
+  console.log(user1.toString); // toString -> {name: "John"}
   console.log(+user1); // valueOf -> 1000
   console.log(user1 + 500); // valueOf -> 1500
 

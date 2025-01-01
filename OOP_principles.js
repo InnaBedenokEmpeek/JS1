@@ -13,6 +13,9 @@ class ChartClickable extends Chart {
     }
 }
 
+let chartClick = new ChartClickable();
+console.log(chartClick);
+
 //2.polymorphism principle
 class ChartClickableSecond extends ChartClickable {
     handleClick(){
