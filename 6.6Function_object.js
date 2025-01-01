@@ -4,10 +4,10 @@
 
 let numbers = [2,4,7,9];
 
-let max = Math.min.apply(0, numbers);
+let max = Math.min.apply(this, numbers);
 console.log(max);
 
-
+//
 const obj1 = {name: "Inna", age: 30};
 
 const obj2 = {
@@ -30,3 +30,14 @@ console.log( [...str]);
 let arr = [1, 2, 3];
 
 let arrCopy = [...arr]; //робить копію масива або обєктаб alert(arr === arrCopy); - false
+
+//one more example
+const array12 = [ "a", "b"];
+const elements = [0, 1, 2];
+
+array12.push.apply(array12, elements);
+//or array12.push(...elemants);
+console.log(array12);
+
+//bind - створює привязку але не викликається у цей момент, бо кол та аплай викликаються одразу,
+// а у майбутньому можемо викликати з певними параметрами
