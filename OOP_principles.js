@@ -52,5 +52,7 @@ class ChartClickable1 extends Chart {
 //     }
 // }
 
+renderChart(new Chart("30px", "red", "true"));
+renderChart(new ChartClickable("30px", "green", "true"));
 // renderChart(new Chart("300px", "red", "true"));
 // renderChart(new ChartClickable("300px", "green", "true"));
